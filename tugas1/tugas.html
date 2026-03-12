@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramadan Kareem 1447H</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #ffffff; /* Latar belakang utama putih */
+        color: #2d3436;
+      }
+      .arabic-text {
+        font-family: "Amiri", serif;
+        color: #198754;
+      }
+      .hero-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #198754;
+      }
+      .thr-card {
+        border: 2px dashed #ffc107;
+        transition: all 0.3s ease;
+      }
+      .thr-card:hover {
+        border-style: solid;
+        background-color: #fffdf5;
+      }
+      /* Custom Button Animation */
+      #btnClaimTHR {
+        transition: transform 0.2s;
+      }
+      #btnClaimTHR:active {
+        transform: scale(0.95);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="py-5 text-center bg-white">
+      <div class="container py-5">
+        <i class="bi bi-moon-stars text-warning display-4 mb-3"></i>
+        <h1 class="hero-title mb-2">Ramadan Kareem</h1>
+        <p class="lead text-muted mb-4">Menebar Berkah di Bulan yang Suci</p>
+        <h2 class="arabic-text display-5 mb-5">رمضان مبارك</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <p class="fs-5">
+              Selamat menjalankan ibadah puasa di tahun 1447 Hijriah. Semoga
+              setiap langkah kita di bulan ini menjadi pemberat timbangan
+              kebaikan di akhirat nanti.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn btn-success btn-md px-5 py-3 rounded-pill fw-semibold shadow"
+        id="btnClaimTHR"
+      >
+        <i class="bi bi-gift me-2"></i> BUKA HADIAH THR
+      </button>
+    </section>
+
+    <section id="jadwal" class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold text-success">Jadwal Lengkap Ibadah Ramadhan 1447 H</h2>
+          
+        </div>
+
+        <div
+          class="table-responsive shadow-sm rounded-4 border"
+          style="max-height: 500px; overflow-y: auto"
+        >
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-success sticky-top">
+              <tr>
+                <th class="py-3 ps-4">Ramadan </th>
+                <th class="py-3">Tanggal</th>
+                <th class="py-3 text-center">Imsak</th>
+                <th class="py-3 text-center">Subuh</th>
+                <th class="py-3 text-center">Dzuhur</th>
+                <th class="py-3 text-center">Ashar</th>
+                <th class="py-3 text-center text-danger">Maghrib</th>
+                <th class="py-3 text-center">Isya</th>
+              </tr>
+            </thead>
+            <tbody id="daftar-jadwal-lengkap"></tbody>
+          </table>
+        </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="thrModal"
+      tabindex="-1"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg overflow-hidden">
+          <div class="modal-body p-5 text-center">
+            <div class="mb-4">
+              <div class="bg-light d-inline-block rounded-circle">
+                <img
+                  src="WhatsApp Image 2026-03-12 at 21.43.21.jpeg"
+                  alt=""
+                  class="rounded-circle"
+                  style="width: 200px; height: 200px"
+                />
+              </div>
+            </div>
+            <h2 class="fw-bold text-dark mb-2">Alhamdulillah!</h2>
+            <h5 class="text-success fw-semibold mb-4">
+              Selamat Anda Mendapatkan THR
+            </h5>
+
+            <p class="text-muted mb-4 px-3">
+              Terima kasih telah menjadi bagian dari perjalanan kami. Semoga
+              berkah Ramadan menyertai Anda!
+            </p>
+
+            <div class="bg-success bg-opacity-10 p-4 rounded-4 mb-4">
+              <h1 class="fw-bold text-success mb-0">Rp 1.000.000</h1>
+              <small class="text-success text-uppercase fw-bold"
+                >Pahala Berlipat Ganda</small>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-dark w-100 py-3 rounded-pill fw-semibold"
+              data-bs-dismiss="modal"
+            >
+              Sehat sehat orang baik
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const btnClaim = document.getElementById("btnClaimTHR");
+        const modalElement = document.getElementById("thrModal");
+        const myModal = new bootstrap.Modal(modalElement);
+
+        btnClaim.addEventListener("click", function () {
+          myModal.show();
+          btnClaim.innerHTML =
+            '<i class="bi bi-check-circle-fill me-2"></i> BERHASIL DIKLAIM';
+          btnClaim.classList.replace("btn-success", "btn-secondary");
+          btnClaim.disabled = true;
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const tableBody = document.getElementById("daftar-jadwal-lengkap");
+
+        
+        const totalHari = 30;
+        const startDate = new Date(2026, 1, 19); 
+
+        let rows = "";
+
+        for (let i = 1; i <= totalHari; i++) {
+          
+          const tgl = new Date(startDate);
+          tgl.setDate(startDate.getDate() + (i - 1));
+
+          const opsiTanggal = { day: "numeric", month: "long" };
+          const formatTanggal = tgl.toLocaleDateString("id-ID", opsiTanggal);
+
+          rows += `
+            <tr ${i === 1 ? 'class="table-warning font-weight-bold"' : ""}>
+                <td class="ps-4 text-success">${i} Ramadan</td>
+                <td>${formatTanggal}</td>
+                <td class="text-center">04:22</td>
+                <td class="text-center">04:32</td>
+                <td class="text-center">11:55</td>
+                <td class="text-center">15:05</td>
+                <td class="text-center fw-bold text-danger">18:04</td>
+                <td class="text-center">19:14</td>
+            </tr>
+        `;
+        }
+
+        tableBody.innerHTML = rows;
+      });
+    </script>
+  </body>
+</html>

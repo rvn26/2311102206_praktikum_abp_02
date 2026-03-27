@@ -41,9 +41,12 @@
 └── package.json         # Dependensi proyek
 ```
 
-##vidio persentasi
-https://drive.google.com/file/d/11FWxdGDxKFKWtQ_L3QIG_oighIqjusnT/view?usp=sharing
+## 🎥 Video Presentasi
+Untuk melihat demonstrasi lengkap mengenai fitur, alur kerja (workflow), dan penjelasan kode program, silakan tonton video presentasi melalui tautan di bawah ini:
 
+| 📺 Tonton Video Demo |
+| :--- |
+| [![Video Presentasi](https://drive.google.com/file/d/11FWxdGDxKFKWtQ_L3QIG_oighIqjusnT/view?usp=sharing) |
 
 
 

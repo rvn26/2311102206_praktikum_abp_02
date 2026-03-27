@@ -1,0 +1,53 @@
+{
+  "laporans": [
+    {
+      "id": 8,
+      "nama": "Ervan Hapiz",
+      "email": "ervannn26@gmail.com",
+      "pekerjaan": "Designer",
+      "isi_laporan": "dsjkndjasndjksa"
+    },
+    {
+      "id": 9,
+      "nama": "Ervan Hapiz",
+      "email": "ervannn26@gmail.com",
+      "pekerjaan": "Designer",
+      "isi_laporan": "dsjkndjasndjksa"
+    },
+    {
+      "id": 10,
+      "nama": "Ervan Hapiz",
+      "email": "ervannn26@gmail.com",
+      "pekerjaan": "Designer",
+      "isi_laporan": "dsjkndjasndjksa"
+    },
+    {
+      "id": 11,
+      "nama": "Ervan Hapiz",
+      "email": "ervannn26@gmail.com",
+      "pekerjaan": "Designer",
+      "isi_laporan": "dsjkndjasndjksa"
+    },
+    {
+      "id": 12,
+      "nama": "Ervan Hapiz",
+      "email": "ervannn26@gmail.com",
+      "pekerjaan": "Designer",
+      "isi_laporan": "dsjkndjasndjksa"
+    },
+    {
+      "id": 13,
+      "nama": "Ervan Hapiz",
+      "email": "ervannn26@gmail.com",
+      "pekerjaan": "Programmer",
+      "isi_laporan": "ada maling komputer"
+    },
+    {
+      "id": 14,
+      "nama": "Ervan Hapiz",
+      "email": "ervannn26@gmail.com",
+      "pekerjaan": "Designer",
+      "isi_laporan": "maling leptop saya"
+    }
+  ]
+}

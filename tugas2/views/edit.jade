@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  .row
+    .col-md-8.offset-md-2
+      h1.mb-4 ✏️ Edit Mahasiswa
+
+      if error
+        .alert.alert-danger.alert-dismissible.fade.show(role='alert')
+          strong #{error}
+          button.btn-close(type='button', data-bs-dismiss='alert', aria-label='Close')
+
+      .card
+        .card-body
+          form(method='POST', action='/edit/' + mahasiswa.id)
+            .mb-3
+              label.form-label(for='nama') Nama Lengkap
+              input#nama.form-control(type='text', name='nama', placeholder='Masukkan nama lengkap', value=mahasiswa.nama, required)
+
+            .mb-3
+              label.form-label(for='email') Email
+              input#email.form-control(type='email', name='email', placeholder='Masukkan email', value=mahasiswa.email, required)
+
+            .mb-3
+              label.form-label(for='jurusan') Jurusan
+              select#jurusan.form-select(name='jurusan', required)
+                option(value='Informatika', selected=(mahasiswa.jurusan === 'Informatika')) Informatika
+                option(value='Teknik Sipil', selected=(mahasiswa.jurusan === 'Teknik Sipil')) Teknik Sipil
+                option(value='Akuntansi', selected=(mahasiswa.jurusan === 'Akuntansi')) Akuntansi
+                option(value='Manajemen', selected=(mahasiswa.jurusan === 'Manajemen')) Manajemen
+                option(value='Hukum', selected=(mahasiswa.jurusan === 'Hukum')) Hukum
+
+            .d-grid.gap-2.d-md-flex.justify-content-md-end
+              a.btn.btn-secondary(href='/') ← Kembali
+              button.btn.btn-primary(type='submit') Update Data

@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  .row
+    .col-md-8.offset-md-2
+      h1.mb-4 ➕ Tambah Mahasiswa Baru
+
+      if error
+        .alert.alert-danger.alert-dismissible.fade.show(role='alert')
+          strong #{error}
+          button.btn-close(type='button', data-bs-dismiss='alert', aria-label='Close')
+
+      .card
+        .card-body
+          form(method='POST', action='/tambah')
+            .mb-3
+              label.form-label(for='nama') Nama Lengkap
+              input#nama.form-control(type='text', name='nama', placeholder='Masukkan nama lengkap', required)
+
+            .mb-3
+              label.form-label(for='email') Email
+              input#email.form-control(type='email', name='email', placeholder='Masukkan email', required)
+
+            .mb-3
+              label.form-label(for='jurusan') Jurusan
+              select#jurusan.form-select(name='jurusan', required)
+                option(value='') -- Pilih Jurusan --
+                option(value='Informatika') Informatika
+                option(value='Teknik Sipil') Teknik Sipil
+                option(value='Akuntansi') Akuntansi
+                option(value='Manajemen') Manajemen
+                option(value='Hukum') Hukum
+
+            .d-grid.gap-2.d-md-flex.justify-content-md-end
+              a.btn.btn-secondary(href='/') ← Kembali
+              button.btn.btn-primary(type='submit') 💾 Simpan Data

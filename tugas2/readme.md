@@ -46,7 +46,5 @@ Untuk melihat demonstrasi lengkap mengenai fitur, alur kerja (workflow), dan pen
 
 | 📺 Tonton Video Demo |
 | :--- |
-| [![Video Presentasi](https://drive.google.com/file/d/11FWxdGDxKFKWtQ_L3QIG_oighIqjusnT/view?usp=sharing) |
-
-
+| [![Video Presentasi](https://img.shields.io/badge/Google_Drive-Video_Demo-blue?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/11FWxdGDxKFKWtQ_L3QIG_oighIqjusnT/view?usp=sharing) |
 

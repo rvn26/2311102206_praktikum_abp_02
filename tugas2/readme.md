@@ -39,6 +39,11 @@
 ├── data.json            # Database lokal (Format JSON)
 ├── app.js               # Entry point server
 └── package.json         # Dependensi proyek
-
+```
 
 ##vidio persentasi
+https://drive.google.com/file/d/11FWxdGDxKFKWtQ_L3QIG_oighIqjusnT/view?usp=sharing
+
+
+
+

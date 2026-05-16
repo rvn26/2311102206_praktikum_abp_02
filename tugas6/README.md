@@ -111,7 +111,7 @@ Stack(
 
 ```bash
 # Clone atau buka project
-cd tugas
+cd tugas6
 
 # Jalankan aplikasi
 flutter run
@@ -150,6 +150,18 @@ pubspec.yaml            # File konfigurasi dependency
 - [Flutter Documentation](https://docs.flutter.dev/)
 - [Flutter Widgets Catalog](https://docs.flutter.dev/development/ui/widgets)
 - [Flutter Layout Guide](https://docs.flutter.dev/development/ui/layout/tutorial)
+
+## Dokumentasi/Screenshots
+
+Berikut adalah tangkapan layar dari aplikasi yang sedang berjalan:
+
+### Screenshot 1
+
+![Screenshot 1](./dokumentasi/Cuplikan%20layar%202026-05-16%20190743.png)
+
+### Screenshot 2
+
+![Screenshot 2](./dokumentasi/Cuplikan%20layar%202026-05-16%20190752.png)
 
 ---
 
